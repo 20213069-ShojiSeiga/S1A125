@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-	<meta name="description" content="BON CRAYのポートフォリオサイトです" />
+	<meta name="description" content="シンプルでおしゃれな配色と、多少の遊び心を取り入れたポートフォリオサイト 自画像とロゴのイチャイチャも楽しむことができる" />
 	<title>AUTOPOLIFO</title>
 	<link rel="stylesheet" href="index.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,36 +14,69 @@
 	<link href="portfolio/css/style.css" media="all" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="portfolio/img/favicon.ico" />
 	<style type="text/css">
-	.
-		@keyframes loading {
-			0% { transform: rotate(0deg);}
-			30% { transform: rotate(180deg);}
-			100% { transform: rotate(360deg);}
+		/* header */
+		.inner1 {
+			background-color: rgb(224, 103, 55);
+			z-index: 10;}
+		.wrapper { background-color: silver; }
+		#works { background-color: rgb(46, 46, 56);}
+		.title1 {
+			color: rgb(165, 59, 59);
+			font-size: 34px;
+			font-weight: bold;
+			line-height: 1;
+			margin-bottom: 40px;
+			text-align: center;
 		}
-	.skill-img:hover { animation: heart 1s ease 0s 1 normal ;}
-		@keyframes heart {
-        0% { transform: scale(0.8);}
-        40% { transform: scale(1.1);}
-        100% { transform: scale(1);}
-    }
-	</style>
+		/* body */
+		.face , .logo {
+			transition: transform 0.4s;
+			}
+		.face:hover { transform: translateX(100px); }
+		.logo:hover {  transform: translateX(-100px); }
+		/* .face { transform-style: preserve-3d; }
+		.face div{
+			transition: transform 1s;
+			transform-origin: right top -200px;
+			transform: rotateY(30deg);
+		}
+		.face:hover div{
+			transform: rotateY(30deg) scaleZ(2);
+		} */
+		.logo {
+			max-width: 18%;
+			text-align: right;
+		}
+		.face { border-radius: 50%;
+			width:  180px;
+			height: 180px; }
+			.skill-img:hover { animation: heart 1s ease 0s 1 normal ;}
+			@keyframes heart {
+				0% { transform: scale(0.8);}
+				40% { transform: scale(1.1);}
+				100% { transform: scale(1);}
+			}
+		.works-item { z-index: 0;}
+		</style>
 </head>
 
 <body>
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header ">
-			<div class="inner">
-				<h1 class="header-logo">
-					<a href=".">BON CRAY</a>
-				</h1>
-				<nav class="header-nav">
-					<ul class="header-nav-list">
-						<li class="header-nav-item"><a href="#about">ABOUT</a></li>
-						<li class="header-nav-item"><a href="#works">WORKS</a></li>
-						<li class="header-nav-item"><a href="#skill">SKILL</a></li>
-					</ul>
-				</nav>
+		<header class="header">
+			<div class="inner1">
+				<div class="inner">
+					<h1 class="header-logo">
+						<a href=".">BON CRAY</a>
+					</h1>
+					<nav class="header-nav">
+						<ul class="header-nav-list">
+							<li class="header-nav-item"><a href="#about">ABOUT</a></li>
+							<li class="header-nav-item"><a href="#works">WORKS</a></li>
+							<li class="header-nav-item"><a href="#skill">SKILL</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 		<!-- /header -->
@@ -51,15 +84,16 @@
 			<!-- main-visual -->
 			<div class="main-visual" id="about">
 				<div class="main-visual-inner">
+					<!-- <p class="main-visual-img">
+					</p> -->
+					<img class="face" src="portfolio/img/profile.png" alt="自画像" ontouchstart="" />
+					<img class="logo" src="portfolio/img/icon_bijin.png" alt="美人" />
 					<p class="main-visual-title">盆暮</p>
 					<p class="main-visual-subtitle">PORTFOLIO</p>
 					<div class="main-visual-profile">
-						<p class="main-visual-img">
-							<img class="face" src="portfolio/img/profile.png" alt="自画像" />
-						</p>
 						<p class="main-visual-text">
 							背後に気配を感じた時にいる人。<br class="sp-only">痒い所に手が届かない時に呼びたい人。<br>
-							１０年後ミスコンに出ることが目標。<br class="sp-only"><br>
+							１０年後ミスコンに出ることが目標。<br class="sp-only">
 						</p>
 					</div>
 				</div>
@@ -68,7 +102,7 @@
 			<!-- works -->
 			<section class="works section" id="works">
 				<div class="inner">
-					<h2 class="title">WORKS</h2>
+					<h2 class="title1">WORKS</h2>
 					<div class="works-list">
 						<a class="works-item btn-denim" href="ensyu/01.html">ENSYU 01</a>
 						<a class="works-item btn-denim" href="ensyu/02.html">ENSYU 02</a>
