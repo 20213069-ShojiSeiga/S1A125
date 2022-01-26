@@ -16,7 +16,7 @@ section {
   /*ここから*/
   position: relative;
   top: 40px;
-  background: #fcc;
+  left: 100px;
   /*ここまで*/
 }
 section.second {
@@ -35,8 +35,8 @@ section.second {
 /* positionを使った指定 */
 .pagetop {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  right: 20px;
 }
 
 /*ここまで*/

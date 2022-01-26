@@ -11,10 +11,10 @@
             margin: 2em 2em 4em;
             background: #ad4444;
             color: #fff;
-            font-size: 12px;
+            font-size: 14px;
         }
     /* ジグザグに動くアニメーション */
-    .sample1 { animation: zigzag 1s ease 0s 10 normal ;}
+    .sample1 { animation: zigzag 2s ease 0s 3 normal ;}
     /* zigzagのキーフレーム */
     @keyframes zigzag {
         0% { transform: translate(0,0);}
@@ -22,7 +22,7 @@
         100% { transform: translate(100px,0px);}
     }
     /* 大きさと色のアニメーション */
-    .sample2 { animation: scale-and-color 1s ease 0s infinite alternate;}
+    .sample2 { animation: scale-and-color 4s ease 0s infinite alternate;}
     /* scaleのキーフレーム */
     @keyframes scale-and-color {
         0% { background: #ad4444; transform: scale(1);}
@@ -31,10 +31,10 @@
     }
     /* ローディングアニメーション */
     img {
-        width: 200px;
-        margin-right: 6em;
+        width: 100px;
+        margin-right: 2em;
     }
-    .sample3 { animation: loading 10s linear 0s infinite ;}
+    .sample3 { animation: loading 1s linear 0s infinite ;}
     /* キーフレーム */
     @keyframes loading {
         0% { transform: rotate(0deg);}
@@ -42,7 +42,7 @@
         100% { transform: rotate(360deg);}
     }
     /* ハートのアニメーション */
-    .sample4 { animation: heart 0.1s ease 0s infinite normal ;}
+    .sample4 { animation: heart 0.8s ease 0s infinite normal ;}
     /* キーフレーム */
     @keyframes heart {
         0% { transform: scale(1);}

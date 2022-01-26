@@ -1,1 +1,67 @@
- 
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    font-family: メイリオ;
+    margin: 0;
+}
+body {
+    background: #f1c573;
+    margin: 0px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px;
+}
+article {
+    width: 850px;
+    /* max-width: 90%; */
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+}
+header {
+    background: #f83;
+    color: #fff;
+    padding-left: 10px;
+    width: 350px;
+    text-align: left;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+section {
+    padding: 0.5em 1em;
+    margin: 0;
+    font-weight: bold;
+    border: solid 0.1px #e0d5d5;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+p.btn {
+    /* width: 300px; */
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.btn a{  
+    border-radius: 8px;
+    background-color: #f83;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+img {
+    display: block;
+    margin-bottom: 40px;
+
+}
+h2 {color: #f83;}
+ul,ol {color: #000;}
+address {
+    text-align: center;
+    margin-top: 25px;
+}
